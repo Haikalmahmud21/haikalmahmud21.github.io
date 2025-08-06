@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pelatih Renang Profesional</title>
+    <style>
+        /* CSS untuk styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Warna dasar seperti air */
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #0077b6; /* Biru laut */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-image: url('https://via.placeholder.com/1500x800'); /* Ganti dengan gambar kolam renang Anda */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #ffb703; /* Kuning cerah */
+            color: #000;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ffc845;
+        }
+
+        .section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: #0077b6;
+            margin-bottom: 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-item h3 {
+            color: #0077b6;
+        }
+
+        .footer {
+            background-color: #003049;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto 0;
+            text-align: left;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Pelatih Renang [Nama Anda]</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Belajar Berenang dengan Nyaman dan Aman</h2>
+            <p>Saya membantu Anda atau anak Anda menguasai teknik renang, dari pemula hingga mahir, dengan pendekatan yang ramah dan profesional.</p>
+            <a href="#kontak" class="cta-button">Hubungi Saya Sekarang</a>
+        </div>
+    </section>
+
+    <section class="section" id="tentang">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <p>Jelaskan pengalaman dan sertifikasi Anda di sini. Misal: "Saya adalah pelatih renang bersertifikasi dengan 10 tahun pengalaman. Saya berkomitmen untuk menciptakan lingkungan belajar yang positif dan mendukung."</p>
+        </div>
+    </section>
+
+    <section class="section" id="layanan">
+        <div class="container">
+            <h2 class="section-title">Layanan Saya</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Kelas Renang Anak</h3>
+                    <p>Program khusus untuk anak-anak usia 5-12 tahun. Fokus pada keselamatan dan teknik dasar dengan cara yang menyenangkan.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Kelas Renang Dewasa</h3>
+                    <p>Sesi privat atau kelompok kecil untuk Anda yang baru belajar atau ingin meningkatkan kemampuan renang.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Program Pelatihan Lanjutan</h3>
+                    <p>Sesi intensif untuk perenang yang ingin meningkatkan kecepatan, stamina, atau mempersiapkan diri untuk kompetisi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="kontak">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p>Isi formulir di bawah ini untuk bertanya atau menjadwalkan sesi pelatihan.</p>
+            <form class="contact-form" action="#" method="post">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="pesan">Pesan Anda</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pelatih Renang [Nama Anda]. Semua Hak Cipta Dilindungi.</p>
+            <p>Hubungi: (nomor telepon Anda) | Email: (alamat email Anda)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
