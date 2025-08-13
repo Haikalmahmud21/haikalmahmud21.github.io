@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Presensi Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #tanggal {
+            font-weight: bold;
+            color: #777;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Presensi Siswa</h1>
+        <div id="tanggal"></div>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nis">Nomor Induk Siswa (NIS)</label>
+                <input type="text" id="nis" name="nis" placeholder="Contoh: 12345" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap Siswa" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="kelas">Pilih Kelas</label>
+                <select id="kelas" name="kelas" required>
+                    <option value="">Pilih Kelas</option>
+                    <option value="10A">10A</option>
+                    <option value="10B">10B</option>
+                    <option value="11A">11A</option>
+                    <option value="11B">11B</option>
+                    <option value="12A">12A</option>
+                    <option value="12B">12B</option>
+                </select>
+            </div>
+
+            <button type="submit">Hadir</button>
+        </form>
+    </div>
+
+    <script>
+        const tanggalDiv = document.getElementById('tanggal');
+        const today = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        tanggalDiv.textContent = today.toLocaleDateString('id-ID', options);
+    </script>
+
+</body>
+</html>
