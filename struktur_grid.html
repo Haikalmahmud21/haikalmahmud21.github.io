@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            padding: 30px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Struktur Grid HTML</h1>
+    <div class="grid-container">
+        <div class="grid-item">Header</div>
+        <div class="grid-item">Main Content</div>
+        <div class="grid-item">Sidebar</div>
+        <div class="grid-item">Section 1</div>
+        <div class="grid-item">Section 2</div>
+        <div class="grid-item">Section 3</div>
+    </div>
+</body>
+</html>
